@@ -8,7 +8,7 @@ server.use(express.json());
 
 server.use('/api/cars', carsRouter);
 
-server.use('*', (req,res) => {
+server.get('*', (req,res) => {
     res.send(`<h2>Sorry Princess is not here</h2>`)
 });
 
